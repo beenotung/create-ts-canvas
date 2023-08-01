@@ -1,11 +1,28 @@
 {
   "name": "create-ts-canvas",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "tsc --noEmit",
-    "build": "tsc -p ."
+  "description": "create canvas art project template using typescript",
+  "keywords": [
+    "typescript",
+    "canvas",
+    "starter",
+    "template",
+    "cli",
+    "npm-init"
+  ],
+  "author": "Beeno Tung <aabbcc1241@yahoo.com.hk> (https://beeno-tung.surge.sh)",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beenotung/create-ts-canvas.git"
+  },
+  "homepage": "https://github.com/beenotung/create-ts-canvas#readme",
+  "bugs": {
+    "url": "https://github.com/beenotung/create-ts-canvas/issues"
+  },
+  "main": "cli.js",
+  "bin": {
+    "create-ts-canvas": "cli.js"
   },
   "files": [
     "template/.vscode/extensions.json",
@@ -16,9 +33,10 @@
     "template/package.json",
     "template/tsconfig.json"
   ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "test": "tsc --noEmit",
+    "build": "tsc -p ."
+  },
   "dependencies": {
     "npm-init-helper": "^1.5.0"
   },
