@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { getDest, copyTemplate } from 'npm-init-helper'
 import { join } from 'path'
 
