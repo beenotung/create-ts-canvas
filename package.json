@@ -1,0 +1,31 @@
+{
+  "name": "create-ts-canvas",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc --noEmit",
+    "build": "tsc -p ."
+  },
+  "files": [
+    "template/.vscode/extensions.json",
+    "template/.vscode/settings.json",
+    "template/.gitignore",
+    "template/index.html",
+    "template/main.ts",
+    "template/package.json",
+    "template/tsconfig.json"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-init-helper": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  }
+}
