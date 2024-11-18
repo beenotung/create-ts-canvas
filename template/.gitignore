@@ -6,3 +6,4 @@ dist/
 .*-debug.log
 *.tsbuildinfo
 .env
+bundle.js
