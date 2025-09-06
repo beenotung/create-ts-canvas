@@ -2,15 +2,15 @@ import { new_oklab, new_rgb, oklab_to_rgb, range } from 'oklab.ts/dist/oklab'
 
 let canvas = document.createElement('canvas')
 
-let ratio = 10
+let scale = 10
 
-canvas.width = 400 / ratio
-canvas.height = 400 / ratio
+canvas.width = 400 / scale
+canvas.height = 400 / scale
 
 let batch = 100
 
-canvas.style.width = canvas.width * ratio + 'px'
-canvas.style.height = canvas.height * ratio + 'px'
+canvas.style.width = canvas.width * scale + 'px'
+canvas.style.height = canvas.height * scale + 'px'
 
 let context = canvas.getContext('2d')!
 let imageData = context.getImageData(0, 0, canvas.width, canvas.height)
@@ -47,4 +47,10 @@ requestAnimationFrame(tick)
 
 document.body.appendChild(canvas)
 
-Object.assign(window, { canvas, context, imageData, ratio, tick })
+Object.assign(window, {
+  canvas,
+  context,
+  imageData,
+  scale,
+  tick,
+})
