@@ -20,5 +20,10 @@
   },
   "dependencies": {
     "oklab.ts": "^2.2.7"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }
